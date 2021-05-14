@@ -1,4 +1,5 @@
 {
-  "name": "HangerMobile",
-  "displayName": "HangerMobile"
+  "appName": "HangerMobile",
+  "name": "com.hanger",
+  "displayName": "Hanger"
 }
