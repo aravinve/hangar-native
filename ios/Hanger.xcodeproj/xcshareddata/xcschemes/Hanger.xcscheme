@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "HangerMobile.app"
-               BlueprintName = "HangerMobile"
-               ReferencedContainer = "container:HangerMobile.xcodeproj">
+               BuildableName = "Hanger.app"
+               BlueprintName = "Hanger"
+               ReferencedContainer = "container:Hanger.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "HangerMobileTests.xctest"
-               BlueprintName = "HangerMobileTests"
-               ReferencedContainer = "container:HangerMobile.xcodeproj">
+               BuildableName = "HangerTests.xctest"
+               BlueprintName = "HangerTests"
+               ReferencedContainer = "container:Hanger.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "HangerMobile.app"
-            BlueprintName = "HangerMobile"
-            ReferencedContainer = "container:HangerMobile.xcodeproj">
+            BuildableName = "Hanger.app"
+            BlueprintName = "Hanger"
+            ReferencedContainer = "container:Hanger.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "HangerMobile.app"
-            BlueprintName = "HangerMobile"
-            ReferencedContainer = "container:HangerMobile.xcodeproj">
+            BuildableName = "Hanger.app"
+            BlueprintName = "Hanger"
+            ReferencedContainer = "container:Hanger.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
