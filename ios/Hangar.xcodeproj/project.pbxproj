@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* HangerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* HangerTests.m */; };
+		00E356F31AD99517003FC87E /* HangarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* HangarTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		385BDDEDD0582B9EDBEE8337 /* libPods-Hanger-HangerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5648C7913204BE4AA0A631 /* libPods-Hanger-HangerTests.a */; };
+		2FC4E9B07F9AFBE16E298EC9 /* libPods-Hangar-HangarTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F95C733A3D675122BA4D0BAB /* libPods-Hangar-HangarTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		C93CF8D5EFD6A12DBA28E643 /* libPods-Hanger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0943D197C97635DCEAFD1C3B /* libPods-Hanger.a */; };
+		9A0EC729979185848D3F1D21 /* libPods-Hangar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F9268D398213FBD2586B2A0 /* libPods-Hangar.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,28 +22,28 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = Hanger;
+			remoteInfo = Hangar;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* HangerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HangerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* HangarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HangarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* HangerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HangerTests.m; sourceTree = "<group>"; };
-		0943D197C97635DCEAFD1C3B /* libPods-Hanger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Hanger.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07F961A680F5B00A75B9A /* Hanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Hanger/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Hanger/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Hanger/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Hanger/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Hanger/main.m; sourceTree = "<group>"; };
-		3AADB482A4668600DA5CEBF8 /* Pods-Hanger-HangerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hanger-HangerTests.debug.xcconfig"; path = "Target Support Files/Pods-Hanger-HangerTests/Pods-Hanger-HangerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		43D7CBCE7C79B5B83266C31C /* Pods-Hanger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hanger.release.xcconfig"; path = "Target Support Files/Pods-Hanger/Pods-Hanger.release.xcconfig"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Hanger/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9C3CD6B4846CD358F1884228 /* Pods-Hanger-HangerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hanger-HangerTests.release.xcconfig"; path = "Target Support Files/Pods-Hanger-HangerTests/Pods-Hanger-HangerTests.release.xcconfig"; sourceTree = "<group>"; };
-		CC5648C7913204BE4AA0A631 /* libPods-Hanger-HangerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Hanger-HangerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F21AD99517003FC87E /* HangarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HangarTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* Hangar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hangar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Hangar/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Hangar/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Hangar/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Hangar/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Hangar/main.m; sourceTree = "<group>"; };
+		5C30728078BA54FE1578F8AE /* Pods-Hangar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hangar.release.xcconfig"; path = "Target Support Files/Pods-Hangar/Pods-Hangar.release.xcconfig"; sourceTree = "<group>"; };
+		5F9268D398213FBD2586B2A0 /* libPods-Hangar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Hangar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Hangar/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9EBDCA80ADDC5BB300BECE0A /* Pods-Hangar-HangarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hangar-HangarTests.debug.xcconfig"; path = "Target Support Files/Pods-Hangar-HangarTests/Pods-Hangar-HangarTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B419F2DD1C2FA7E73206B668 /* Pods-Hangar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hangar.debug.xcconfig"; path = "Target Support Files/Pods-Hangar/Pods-Hangar.debug.xcconfig"; sourceTree = "<group>"; };
+		B6FE5E07A3CEFEDAEE5E960C /* Pods-Hangar-HangarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hangar-HangarTests.release.xcconfig"; path = "Target Support Files/Pods-Hangar-HangarTests/Pods-Hangar-HangarTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F267D2604AA8ABBD495B0F42 /* Pods-Hanger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hanger.debug.xcconfig"; path = "Target Support Files/Pods-Hanger/Pods-Hanger.debug.xcconfig"; sourceTree = "<group>"; };
+		F95C733A3D675122BA4D0BAB /* libPods-Hangar-HangarTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Hangar-HangarTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				385BDDEDD0582B9EDBEE8337 /* libPods-Hanger-HangerTests.a in Frameworks */,
+				2FC4E9B07F9AFBE16E298EC9 /* libPods-Hangar-HangarTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,20 +59,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C93CF8D5EFD6A12DBA28E643 /* libPods-Hanger.a in Frameworks */,
+				9A0EC729979185848D3F1D21 /* libPods-Hangar.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* HangerTests */ = {
+		00E356EF1AD99517003FC87E /* HangarTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* HangerTests.m */,
+				00E356F21AD99517003FC87E /* HangarTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = HangerTests;
+			path = HangarTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -83,7 +83,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* Hanger */ = {
+		13B07FAE1A68108700A75B9A /* Hangar */ = {
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -93,15 +93,15 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = Hanger;
+			name = Hangar;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				0943D197C97635DCEAFD1C3B /* libPods-Hanger.a */,
-				CC5648C7913204BE4AA0A631 /* libPods-Hanger-HangerTests.a */,
+				5F9268D398213FBD2586B2A0 /* libPods-Hangar.a */,
+				F95C733A3D675122BA4D0BAB /* libPods-Hangar-HangarTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,12 +116,12 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* Hanger */,
+				13B07FAE1A68108700A75B9A /* Hangar */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* HangerTests */,
+				00E356EF1AD99517003FC87E /* HangarTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				E1CF250923CE9D51CE7E0C73 /* Pods */,
+				A271932523115E40AB2253A4 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -131,19 +131,19 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* Hanger.app */,
-				00E356EE1AD99517003FC87E /* HangerTests.xctest */,
+				13B07F961A680F5B00A75B9A /* Hangar.app */,
+				00E356EE1AD99517003FC87E /* HangarTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E1CF250923CE9D51CE7E0C73 /* Pods */ = {
+		A271932523115E40AB2253A4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F267D2604AA8ABBD495B0F42 /* Pods-Hanger.debug.xcconfig */,
-				43D7CBCE7C79B5B83266C31C /* Pods-Hanger.release.xcconfig */,
-				3AADB482A4668600DA5CEBF8 /* Pods-Hanger-HangerTests.debug.xcconfig */,
-				9C3CD6B4846CD358F1884228 /* Pods-Hanger-HangerTests.release.xcconfig */,
+				B419F2DD1C2FA7E73206B668 /* Pods-Hangar.debug.xcconfig */,
+				5C30728078BA54FE1578F8AE /* Pods-Hangar.release.xcconfig */,
+				9EBDCA80ADDC5BB300BECE0A /* Pods-Hangar-HangarTests.debug.xcconfig */,
+				B6FE5E07A3CEFEDAEE5E960C /* Pods-Hangar-HangarTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -152,47 +152,47 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* HangerTests */ = {
+		00E356ED1AD99517003FC87E /* HangarTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "HangerTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "HangarTests" */;
 			buildPhases = (
-				225C15C52112744CD1862B69 /* [CP] Check Pods Manifest.lock */,
+				3850096D6E6575ED201D971B /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C64AE16A577EE6ECF418CB8A /* [CP] Embed Pods Frameworks */,
-				D0177BE638BC44425983CCDB /* [CP] Copy Pods Resources */,
+				B66C58799B1943E9BFF39F27 /* [CP] Embed Pods Frameworks */,
+				E706743161AF625FBF8768A4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = HangerTests;
-			productName = HangerTests;
-			productReference = 00E356EE1AD99517003FC87E /* HangerTests.xctest */;
+			name = HangarTests;
+			productName = HangarTests;
+			productReference = 00E356EE1AD99517003FC87E /* HangarTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* Hanger */ = {
+		13B07F861A680F5B00A75B9A /* Hangar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Hanger" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Hangar" */;
 			buildPhases = (
-				9D807986E7117AADBB0F4566 /* [CP] Check Pods Manifest.lock */,
+				17C506FFC27DE1F0B09479D1 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				C5F8352094EF38A1C129B519 /* [CP] Embed Pods Frameworks */,
-				EAC723A9687720D3BD3112D5 /* [CP] Copy Pods Resources */,
+				73BEC36555545487FA730EB1 /* [CP] Embed Pods Frameworks */,
+				525D54E9CB1B777861A79B73 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Hanger;
-			productName = Hanger;
-			productReference = 13B07F961A680F5B00A75B9A /* Hanger.app */;
+			name = Hangar;
+			productName = Hangar;
+			productReference = 13B07F961A680F5B00A75B9A /* Hangar.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -212,7 +212,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Hanger" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Hangar" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -225,8 +225,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* Hanger */,
-				00E356ED1AD99517003FC87E /* HangerTests */,
+				13B07F861A680F5B00A75B9A /* Hangar */,
+				00E356ED1AD99517003FC87E /* HangarTests */,
 			);
 		};
 /* End PBXProject section */
@@ -265,7 +265,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		225C15C52112744CD1862B69 /* [CP] Check Pods Manifest.lock */ = {
+		17C506FFC27DE1F0B09479D1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,14 +280,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Hanger-HangerTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Hangar-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9D807986E7117AADBB0F4566 /* [CP] Check Pods Manifest.lock */ = {
+		3850096D6E6575ED201D971B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -302,79 +302,79 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Hanger-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Hangar-HangarTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C5F8352094EF38A1C129B519 /* [CP] Embed Pods Frameworks */ = {
+		525D54E9CB1B777861A79B73 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Hanger/Pods-Hanger-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Hanger/Pods-Hanger-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hanger/Pods-Hanger-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C64AE16A577EE6ECF418CB8A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Hanger-HangerTests/Pods-Hanger-HangerTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Hanger-HangerTests/Pods-Hanger-HangerTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hanger-HangerTests/Pods-Hanger-HangerTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D0177BE638BC44425983CCDB /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Hanger-HangerTests/Pods-Hanger-HangerTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Hangar/Pods-Hangar-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Hanger-HangerTests/Pods-Hanger-HangerTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Hangar/Pods-Hangar-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hanger-HangerTests/Pods-Hanger-HangerTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hangar/Pods-Hangar-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EAC723A9687720D3BD3112D5 /* [CP] Copy Pods Resources */ = {
+		73BEC36555545487FA730EB1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Hanger/Pods-Hanger-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Hangar/Pods-Hangar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Hanger/Pods-Hanger-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Hangar/Pods-Hangar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hanger/Pods-Hanger-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hangar/Pods-Hangar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B66C58799B1943E9BFF39F27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hangar-HangarTests/Pods-Hangar-HangarTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hangar-HangarTests/Pods-Hangar-HangarTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hangar-HangarTests/Pods-Hangar-HangarTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E706743161AF625FBF8768A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hangar-HangarTests/Pods-Hangar-HangarTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hangar-HangarTests/Pods-Hangar-HangarTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hangar-HangarTests/Pods-Hangar-HangarTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -403,7 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* HangerTests.m in Sources */,
+				00E356F31AD99517003FC87E /* HangarTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +421,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* Hanger */;
+			target = 13B07F861A680F5B00A75B9A /* Hangar */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -429,14 +429,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3AADB482A4668600DA5CEBF8 /* Pods-Hanger-HangerTests.debug.xcconfig */;
+			baseConfigurationReference = 9EBDCA80ADDC5BB300BECE0A /* Pods-Hangar-HangarTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = HangerTests/Info.plist;
+				INFOPLIST_FILE = HangarTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,17 +450,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hanger.app/Hanger";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hangar.app/Hangar";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C3CD6B4846CD358F1884228 /* Pods-Hanger-HangerTests.release.xcconfig */;
+			baseConfigurationReference = B6FE5E07A3CEFEDAEE5E960C /* Pods-Hangar-HangarTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = HangerTests/Info.plist;
+				INFOPLIST_FILE = HangarTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -474,19 +474,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hanger.app/Hanger";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hangar.app/Hangar";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F267D2604AA8ABBD495B0F42 /* Pods-Hanger.debug.xcconfig */;
+			baseConfigurationReference = B419F2DD1C2FA7E73206B668 /* Pods-Hangar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = Hanger/Info.plist;
+				INFOPLIST_FILE = Hangar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -497,7 +497,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = Hanger;
+				PRODUCT_NAME = Hangar;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -506,12 +506,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43D7CBCE7C79B5B83266C31C /* Pods-Hanger.release.xcconfig */;
+			baseConfigurationReference = 5C30728078BA54FE1578F8AE /* Pods-Hangar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = Hanger/Info.plist;
+				INFOPLIST_FILE = Hangar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -522,7 +522,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = Hanger;
+				PRODUCT_NAME = Hangar;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -654,7 +654,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "HangerTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "HangarTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -663,7 +663,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Hanger" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Hangar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -672,7 +672,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Hanger" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Hangar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
