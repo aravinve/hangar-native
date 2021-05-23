@@ -19,7 +19,7 @@ jobs:
 
       - name: Lint code
         run: |
-          npm run lint
+          npm run code:lint
 
   unit-test:
     name: Unit Testing
