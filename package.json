@@ -8,9 +8,16 @@
     "start": "react-native start",
     "test": "jest",
     "code:lint": "eslint .",
-    "code:lintFix": "eslint **/*.js --fix",
-    "code:format": "prettier --write **/*.js",
-    "code:clean": "npm run code:lintFix && npm run code:format"
+    "code:lintFix": "eslint ./**/*.js --fix",
+    "code:formatCheck": "prettier --check ./**/*.js",
+    "code:formatFix": "prettier --write ./**/*.js",
+    "code:clean": "npm run code:lintFix && npm run code:formatFix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "echo \"Running pre-commit hooks\" && npm run code:lint && npm run test",
+      "pre-push": "echo \"Running pre-push hooks\" && npm run test"
+    }
   },
   "dependencies": {
     "@react-navigation/native": "^5.9.4",
@@ -37,10 +44,5 @@
     "metro-react-native-babel-preset": "^0.64.0",
     "react-test-renderer": "17.0.1",
     "ts-jest": "^26.5.6"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run code:lint && npm test"
-    }
   }
 }
