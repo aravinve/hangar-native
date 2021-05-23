@@ -10,8 +10,7 @@
     "code:lint": "eslint .",
     "code:lintFix": "eslint **/*.js --fix",
     "code:format": "prettier --write **/*.js",
-    "code:clean": "npm run code:lintFix && npm run code:format",
-    "prepare": "husky install"
+    "code:clean": "npm run code:lintFix && npm run code:format"
   },
   "dependencies": {
     "@react-navigation/native": "^5.9.4",
