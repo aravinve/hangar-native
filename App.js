@@ -1,37 +1,26 @@
+import { AxiosClient } from "./src/ApiClient";
+import { SafeAreaView, StyleSheet } from "react-native";
 import React, { useEffect, useState } from "react";
-import { SafeAreaView, StyleSheet, Modal, Text } from "react-native";
-import config from "./src/config";
+import ServerUnreachableDialogComponent from "./src/components/ServerUnreachableDialogComponent";
 import SplashscreenPage from "./src/pages/SplashscreenPage";
 
 const App = () => {
   const [isApiReachable, setIsApiReachable] = useState(false);
 
   useEffect(() => {
-    fetch(`https://${config.hostname}/health`, {
+    AxiosClient.get("/health", {
       headers: {
         "Content-type": "application/json",
       },
-    })
-      .then((res) => {
-        setIsApiReachable(true);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    }).then(() => {
+      setIsApiReachable(true);
+    });
   });
 
   return (
     <SafeAreaView style={styles.appContainer}>
       <SplashscreenPage />
-      {!isApiReachable ? (
-        <Modal
-          animationType="fade"
-          visible={!isApiReachable}
-          transparent={true}
-        >
-          <Text>Unable to reach Hangar server</Text>
-        </Modal>
-      ) : null}
+      {!isApiReachable ? <ServerUnreachableDialogComponent /> : null}
     </SafeAreaView>
   );
 };

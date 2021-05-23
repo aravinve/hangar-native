@@ -1,8 +1,8 @@
 export const config = {
-  hostname: () => {
+  baseURL: () => {
     switch (process.env.HANGAR_ENVIRONMENT) {
       case "local":
-        return "localhost";
+        return "http://localhost:5000/";
       case "dev":
         return "";
     }

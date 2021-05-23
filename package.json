@@ -7,29 +7,41 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint .",
+    "code:lint": "eslint .",
+    "code:lintFix": "eslint **/*.js --fix",
+    "code:format": "prettier --write **/*.js",
+    "code:clean": "npm run code:lintFix && npm run code:format",
     "prepare": "husky install"
   },
   "dependencies": {
     "@react-navigation/native": "^5.9.4",
     "@react-navigation/stack": "^5.14.5",
     "@types/jest": "^26.0.23",
+    "axios": "^0.21.1",
     "react": "17.0.1",
-    "react-native": "0.64.1"
+    "react-native": "0.64.1",
+    "react-native-modal": "^11.10.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@babel/runtime": "^7.12.5",
     "@react-native-community/eslint-config": "^2.0.0",
     "@testing-library/react-native": "^7.2.0",
+    "@testing-library/user-event": "^13.1.9",
     "babel-jest": "^26.6.3",
     "eslint": "7.14.0",
+    "eslint-plugin-autofix": "^1.0.5",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
+    "eslint-plugin-unused-imports": "^1.1.1",
     "husky": "^6.0.0",
     "jest": "^26.6.3",
     "metro-react-native-babel-preset": "^0.64.0",
-    "react-test-renderer": "17.0.1"
+    "react-test-renderer": "17.0.1",
+    "ts-jest": "^26.5.6"
   },
-  "jest": {
-    "preset": "react-native"
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run code:lint && npm test"
+    }
   }
 }
