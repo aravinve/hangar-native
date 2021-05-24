@@ -6,7 +6,7 @@ export const AxiosClient = axios.create({
 
 const getBaseUrl = () => {
   switch (process.env.HANGAR_ENVIRONMENT) {
-    case "local":
+    case ("local", ""):
       return "http://localhost:5000/";
     case "dev":
       return "";
