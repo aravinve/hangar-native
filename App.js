@@ -12,9 +12,13 @@ const App = () => {
       headers: {
         "Content-type": "application/json",
       },
-    }).then(() => {
-      setIsApiReachable(true);
-    });
+    })
+      .then(() => {
+        setIsApiReachable(true);
+      })
+      .catch(() => {
+        setIsApiReachable(false);
+      });
   });
 
   return (
