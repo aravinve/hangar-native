@@ -1,5 +1,5 @@
 import { Image, SafeAreaView, StyleSheet, Text } from "react-native";
-import Logo from "../assets/logo.png";
+import Logo from "../../assets/logo.png";
 import React from "react";
 
 export default function Splashscreen() {

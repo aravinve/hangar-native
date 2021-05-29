@@ -2,7 +2,7 @@ import { AxiosClient } from "./src/ApiClient";
 import { SafeAreaView, StyleSheet } from "react-native";
 import React, { useEffect, useState } from "react";
 import ServerUnreachableDialogComponent from "./src/components/ServerUnreachableDialogComponent";
-import SplashscreenPage from "./src/pages/SplashscreenPage";
+import SplashscreenPage from "./src/screens/SplashscreenScreen";
 
 const App = () => {
   const [isApiReachable, setIsApiReachable] = useState(false);
