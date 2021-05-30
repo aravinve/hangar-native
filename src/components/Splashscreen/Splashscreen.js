@@ -1,14 +1,15 @@
-import { Image, SafeAreaView, StyleSheet, Text } from "react-native";
+import { Image, SafeAreaView, StyleSheet, Text, View } from "react-native";
 import Logo from "../../assets/logo.png";
 import React from "react";
 
-export default function Splashscreen() {
+export default function Splashscreen({ loginProp }) {
   return (
     <SafeAreaView style={styles.splashContainer}>
       <Image testID="logoImage" style={styles.logoStyle} source={Logo} />
       <Text testID="logoLabel" style={styles.labelStyle}>
         Hangar
       </Text>
+      <View>{loginProp}</View>
     </SafeAreaView>
   );
 }

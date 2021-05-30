@@ -1,5 +1,7 @@
 import { AxiosClient } from "./src/ApiClient";
+import { NavigationContainer } from "@react-navigation/native";
 import { SafeAreaView, StyleSheet } from "react-native";
+import { UserLoginOrRegisterComponent } from "./src/components/UserLoginOrRegisterComponent";
 import React, { useEffect, useState } from "react";
 import ServerUnreachableDialogComponent from "./src/components/ServerUnreachableDialogComponent";
 import SplashscreenPage from "./src/screens/SplashscreenScreen";
@@ -13,8 +15,11 @@ const App = () => {
         "Content-type": "application/json",
       },
     })
-      .then(() => {
-        setIsApiReachable(true);
+      .then((res) => {
+        const { health } = res.data;
+        if (health === "Up") {
+          setIsApiReachable(true);
+        }
       })
       .catch(() => {
         setIsApiReachable(false);
@@ -22,10 +27,17 @@ const App = () => {
   });
 
   return (
-    <SafeAreaView style={styles.appContainer}>
-      <SplashscreenPage />
-      {!isApiReachable ? <ServerUnreachableDialogComponent /> : null}
-    </SafeAreaView>
+    <NavigationContainer>
+      <SafeAreaView style={styles.appContainer}>
+        <SplashscreenPage>
+          {!isApiReachable ? (
+            <ServerUnreachableDialogComponent />
+          ) : (
+            <UserLoginOrRegisterComponent />
+          )}
+        </SplashscreenPage>
+      </SafeAreaView>
+    </NavigationContainer>
   );
 };
 

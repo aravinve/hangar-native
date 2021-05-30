@@ -18,7 +18,7 @@ describe("<App />", () => {
   });
 
   it("should show modal if server is not reachable", () => {
-    jest.mock("../src/ApiClient.js", () => {
+    jest.mock("./src/ApiClient.js", () => {
       return {
         AxiosClient: {
           get: async () => {
