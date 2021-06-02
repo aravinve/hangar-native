@@ -4,8 +4,13 @@
     "target": "es2016",
     "jsx": "preserve",
     "checkJs": true,
-    "baseUrl": "./src"
+    "baseUrl": "./src",
+    "paths": {
+      "assets": ["assets/*"],
+      "components/*": ["components/*"],
+      "screens/*": ["screens/*"],
+      "config/*": ["config/*"]
+    }
   },
-  "exclude": ["node_modules", "**/node_modules/*"],
-  "include": ["./src/assets/**/*", "./src/screens/*.js"]
+  "exclude": ["node_modules", "**/node_modules/*", "dist"]
 }
