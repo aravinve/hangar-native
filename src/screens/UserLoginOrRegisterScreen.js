@@ -1,4 +1,4 @@
-import { UserLoginOrRegisterComponent } from "../components/UserLoginOrRegisterComponent";
+import { UserLoginOrRegisterComponent } from "components/UserLoginOrRegisterComponent";
 import { View } from "react-native";
 import React from "react";
 

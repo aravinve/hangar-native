@@ -8,9 +8,14 @@ beforeEach(() => {
   jest.useFakeTimers();
 });
 
+afterAll(() => {
+  jest.resetAllMocks();
+  jest.resetModules();
+});
+
 describe("<ServerUnreachableDialogComponent />", () => {
-  it("should render ServerUnreachableDialogComponent with expected dialog title", () => {
-    const dialogTitleComponent = render(
+  it("should render ServerUnreachableDialogComponent with expected dialog title", async () => {
+    const dialogTitleComponent = await render(
       <ServerUnreachableDialogComponent />,
     ).getByTestId("dialogTitle");
 
@@ -20,10 +25,10 @@ describe("<ServerUnreachableDialogComponent />", () => {
     expect(dialogText).toBe("Unable to reach Hangar server");
   });
 
-  it("should close app when EXIT is pressed", () => {
+  it("should close app when EXIT is pressed", async () => {
     BackHandler.exitApp = jest.fn();
 
-    const dialogComponent = render(<ServerUnreachableDialogComponent />);
+    const dialogComponent = await render(<ServerUnreachableDialogComponent />);
     fireEvent.press(dialogComponent.getByTestId("dialogExitButton"));
 
     expect(BackHandler.exitApp).toHaveBeenCalledTimes(1);

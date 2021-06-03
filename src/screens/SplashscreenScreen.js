@@ -1,4 +1,4 @@
-import { Splashscreen } from "../components/Splashscreen";
+import { Splashscreen } from "components/Splashscreen";
 import { View } from "react-native";
 import React from "react";
 

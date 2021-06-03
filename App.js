@@ -1,41 +1,13 @@
-import { AxiosClient } from "./src/ApiClient";
 import { NavigationContainer } from "@react-navigation/native";
 import { SafeAreaView, StyleSheet } from "react-native";
-import { UserLoginOrRegisterComponent } from "./src/components/UserLoginOrRegisterComponent";
-import React, { useEffect, useState } from "react";
-import ServerUnreachableDialogComponent from "./src/components/ServerUnreachableDialogComponent";
-import SplashscreenPage from "./src/screens/SplashscreenScreen";
+import InitialScreen from "./src/screens/InitialScreen";
+import React from "react";
 
 const App = () => {
-  const [isApiReachable, setIsApiReachable] = useState(false);
-
-  useEffect(() => {
-    AxiosClient.get("/health", {
-      headers: {
-        "Content-type": "application/json",
-      },
-    })
-      .then((res) => {
-        const { health } = res.data;
-        if (health === "Up") {
-          setIsApiReachable(true);
-        }
-      })
-      .catch(() => {
-        setIsApiReachable(false);
-      });
-  });
-
   return (
     <NavigationContainer>
       <SafeAreaView style={styles.appContainer}>
-        <SplashscreenPage>
-          {!isApiReachable ? (
-            <ServerUnreachableDialogComponent />
-          ) : (
-            <UserLoginOrRegisterComponent />
-          )}
-        </SplashscreenPage>
+        <InitialScreen />
       </SafeAreaView>
     </NavigationContainer>
   );
