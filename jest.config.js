@@ -15,7 +15,7 @@ module.exports = {
   transformIgnorePatterns: [],
   collectCoverage: true,
   collectCoverageFrom: ["./src/**/*.{js,jsx}"],
-  coveragePathIgnorePatterns: ["./src/ApiClient.js"],
+  coveragePathIgnorePatterns: ["./src/ApiClient.js", "./src/config/*"],
   moduleNameMapper: pathsToModuleNameMapper(paths, {
     prefix: "<rootDir>/src/",
   }),
