@@ -32,6 +32,23 @@ describe("<InitialScreen />", () => {
     expect(testModal).toBeTruthy();
   });
 
+  it("should show error modal if server health is not Up", async () => {
+    jest.spyOn(AxiosClient, "get").mockImplementation(() => {
+      return Promise.resolve({
+        data: {
+          health: "UnHealthy",
+        },
+      });
+    });
+
+    const testModal = await render(<InitialScreen />).getByTestId(
+      "serverErrorModal",
+    ).children;
+
+    expect(AxiosClient.get).toHaveBeenCalledTimes(1);
+    expect(testModal).toBeTruthy();
+  });
+
   it("should show login buttons if server is reachable", async () => {
     jest.spyOn(AxiosClient, "get").mockImplementation(() => {
       return Promise.resolve({
