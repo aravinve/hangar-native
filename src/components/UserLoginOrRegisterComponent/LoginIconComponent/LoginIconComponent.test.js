@@ -28,7 +28,7 @@ describe("<LoginIconComponent />", () => {
       />,
     );
 
-    const buttonLabel = renderedIconButton.getByTestId("logoLabel");
+    const buttonLabel = renderedIconButton.getByTestId("loginButtonLabel");
     const testLabelText = buttonLabel.children[0];
 
     expect(buttonLabel).toBeTruthy();

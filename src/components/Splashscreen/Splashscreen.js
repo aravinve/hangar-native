@@ -1,8 +1,27 @@
 import { Image, SafeAreaView, StyleSheet, Text, View } from "react-native";
 import Logo from "../../assets/logo.png";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import UserLoginService from "./userLogin.service";
 
-export default function Splashscreen({ loginProp }) {
+export default function Splashscreen({ loginProp, navigation }) {
+  const [isError, setIsError] = useState(false);
+
+  useEffect(() => {
+    UserLoginService.checkLoginStatus()
+      .then((res) => {
+        const { userLoginData } = res;
+        const { userId } = userLoginData;
+
+        if (userId && loginProp.key !== "serverUnreachableComponent") {
+          navigation.navigate("HomeScreen", { userId });
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+        setIsError(true);
+      });
+  }, [loginProp, navigation]);
+
   return (
     <SafeAreaView style={styles.splashContainer}>
       <Image testID="logoImage" style={styles.logoStyle} source={Logo} />
@@ -10,6 +29,11 @@ export default function Splashscreen({ loginProp }) {
         Hangar
       </Text>
       <View>{loginProp}</View>
+      {isError ? (
+        <View>
+          <Text>Unable to fetch user data</Text>
+        </View>
+      ) : null}
     </SafeAreaView>
   );
 }

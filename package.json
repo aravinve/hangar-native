@@ -9,7 +9,7 @@
     "test": "jest --silent",
     "test:noCoverage": "jest --no-coverage",
     "code:lint": "eslint .",
-    "code:lintFix": "eslint ./**/*.js --fix",
+    "code:lintFix": "eslint \"./**/*.js\" --fix",
     "code:formatCheck": "prettier --check ./**/*.js",
     "code:formatFix": "prettier --write ./**/*.js",
     "code:clean": "npm run code:lintFix && npm run code:formatFix"

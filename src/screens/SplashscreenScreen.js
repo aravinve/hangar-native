@@ -2,10 +2,10 @@ import { Splashscreen } from "components/Splashscreen";
 import { View } from "react-native";
 import React from "react";
 
-export default function SplashscreenPage(props) {
+export default function SplashscreenPage({ children, navigationProps }) {
   return (
     <View style={splashScreenStyle}>
-      <Splashscreen loginProp={props.children} />
+      <Splashscreen {...navigationProps} loginProp={children} />
     </View>
   );
 }

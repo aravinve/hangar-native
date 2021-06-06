@@ -46,6 +46,13 @@ exports[`<InitialScreen /> should render and match InitialScreen snapshot 1`] = 
               "justifyContent": "center",
               "marginTop": 20,
               "padding": 10,
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.5,
+              "shadowRadius": 2,
               "width": "85%",
             }
           }
@@ -110,7 +117,7 @@ exports[`<InitialScreen /> should render and match InitialScreen snapshot 1`] = 
                 "marginLeft": 10,
               }
             }
-            testID="logoLabel"
+            testID="loginButtonLabel"
           >
             google
           </Text>
@@ -158,6 +165,13 @@ exports[`<InitialScreen /> should render and match InitialScreen snapshot 1`] = 
               "justifyContent": "center",
               "marginTop": 20,
               "padding": 10,
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.5,
+              "shadowRadius": 2,
               "width": "85%",
             }
           }
@@ -222,7 +236,7 @@ exports[`<InitialScreen /> should render and match InitialScreen snapshot 1`] = 
                 "marginLeft": 10,
               }
             }
-            testID="logoLabel"
+            testID="loginButtonLabel"
           >
             facebook
           </Text>
@@ -270,6 +284,13 @@ exports[`<InitialScreen /> should render and match InitialScreen snapshot 1`] = 
               "justifyContent": "center",
               "marginTop": 20,
               "padding": 10,
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.5,
+              "shadowRadius": 2,
               "width": "85%",
             }
           }
@@ -334,7 +355,7 @@ exports[`<InitialScreen /> should render and match InitialScreen snapshot 1`] = 
                 "marginLeft": 10,
               }
             }
-            testID="logoLabel"
+            testID="loginButtonLabel"
           >
             twitter
           </Text>

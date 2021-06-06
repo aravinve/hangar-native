@@ -13,9 +13,17 @@ afterAll(() => {
   jest.clearAllTimers();
 });
 
+const navigationProps = {
+  navigation: {
+    navigate: jest.fn(),
+  },
+};
+
 describe("<InitialScreen />", () => {
   it("should render and match InitialScreen snapshot", async () => {
-    const renderedInitialScreen = await render(<InitialScreen />);
+    const renderedInitialScreen = await render(
+      <InitialScreen navigationProps={navigationProps} />,
+    );
     expect(renderedInitialScreen).toMatchSnapshot();
   });
 
@@ -24,9 +32,9 @@ describe("<InitialScreen />", () => {
       return Promise.reject(new Error());
     });
 
-    const testModal = await render(<InitialScreen />).getByTestId(
-      "serverErrorModal",
-    ).children;
+    const testModal = await render(
+      <InitialScreen navigationProps={navigationProps} />,
+    ).getByTestId("serverErrorModal").children;
 
     expect(AxiosClient.get).toHaveBeenCalledTimes(1);
     expect(testModal).toBeTruthy();
@@ -41,9 +49,9 @@ describe("<InitialScreen />", () => {
       });
     });
 
-    const testModal = await render(<InitialScreen />).getByTestId(
-      "serverErrorModal",
-    ).children;
+    const testModal = await render(
+      <InitialScreen navigationProps={navigationProps} />,
+    ).getByTestId("serverErrorModal").children;
 
     expect(AxiosClient.get).toHaveBeenCalledTimes(1);
     expect(testModal).toBeTruthy();
@@ -58,7 +66,9 @@ describe("<InitialScreen />", () => {
       });
     });
 
-    let initialScreen = await render(<InitialScreen />);
+    let initialScreen = await render(
+      <InitialScreen navigationProps={navigationProps} />,
+    );
 
     const loginButtons = initialScreen.getByTestId("loginButtons").children;
 

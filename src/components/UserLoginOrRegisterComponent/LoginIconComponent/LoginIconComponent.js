@@ -9,7 +9,7 @@ function LoginIconComponent({ icon, label, bgColor, labelColor }) {
     <Pressable>
       <View style={styles.buttonContainer}>
         <FontAwesomeIcon icon={icon} size={30} style={styles.buttonIcon} />
-        <Text testID="logoLabel" style={styles.labelText}>
+        <Text testID="loginButtonLabel" style={styles.labelText}>
           {label}
         </Text>
       </View>
@@ -30,6 +30,10 @@ function loginButtonStyle(bgColor, labelColor) {
       marginTop: 20,
       borderRadius: 10,
       elevation: 2,
+      shadowColor: "#000",
+      shadowOffset: { width: 0, height: 2 },
+      shadowOpacity: 0.5,
+      shadowRadius: 2,
       flexDirection: "row",
       alignItems: "center",
     },

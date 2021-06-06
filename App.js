@@ -1,23 +1,23 @@
 import { NavigationContainer } from "@react-navigation/native";
-import { SafeAreaView, StyleSheet } from "react-native";
+import { createStackNavigator } from "@react-navigation/stack";
+import HomeScreen from "screens/HomeScreen";
 import InitialScreen from "./src/screens/InitialScreen";
 import React from "react";
 
 const App = () => {
+  const Stack = createStackNavigator();
   return (
     <NavigationContainer>
-      <SafeAreaView style={styles.appContainer}>
-        <InitialScreen />
-      </SafeAreaView>
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
+        <Stack.Screen name="InitialScreen">
+          {(navigationProps) => (
+            <InitialScreen navigationProps={navigationProps} />
+          )}
+        </Stack.Screen>
+        <Stack.Screen name="HomeScreen" component={HomeScreen} />
+      </Stack.Navigator>
     </NavigationContainer>
   );
 };
-
-const styles = StyleSheet.create({
-  appContainer: {
-    width: "100%",
-    height: "100%",
-  },
-});
 
 export default App;

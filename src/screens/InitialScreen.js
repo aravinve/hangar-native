@@ -1,10 +1,11 @@
 import { AxiosClient } from "../ApiClient";
+import { SafeAreaView, StyleSheet } from "react-native";
 import { UserLoginOrRegisterComponent } from "components/UserLoginOrRegisterComponent";
 import React, { useEffect, useState } from "react";
 import ServerUnreachableDialogComponent from "components/ServerUnreachableDialogComponent";
 import SplashScreen from "./SplashscreenScreen";
 
-export default function InitialScreen() {
+export default function InitialScreen({ navigationProps }) {
   const [isApiReachable, setIsApiReachable] = useState(false);
 
   useEffect(() => {
@@ -21,12 +22,21 @@ export default function InitialScreen() {
   }, []);
 
   return (
-    <SplashScreen>
-      {!isApiReachable ? (
-        <ServerUnreachableDialogComponent />
-      ) : (
-        <UserLoginOrRegisterComponent />
-      )}
-    </SplashScreen>
+    <SafeAreaView style={styles.appContainer}>
+      <SplashScreen navigationProps={navigationProps}>
+        {!isApiReachable ? (
+          <ServerUnreachableDialogComponent key="serverUnreachableComponent" />
+        ) : (
+          <UserLoginOrRegisterComponent key="userLoginComponent" />
+        )}
+      </SplashScreen>
+    </SafeAreaView>
   );
 }
+
+const styles = StyleSheet.create({
+  appContainer: {
+    width: "100%",
+    height: "100%",
+  },
+});

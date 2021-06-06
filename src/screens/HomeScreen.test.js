@@ -1,0 +1,3 @@
+describe("<HomeScreen />", () => {
+  it("SKIP", () => {});
+});
