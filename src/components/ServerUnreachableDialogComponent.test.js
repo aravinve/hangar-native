@@ -1,6 +1,6 @@
 import "react-native";
-import { BackHandler } from "react-native";
 import { fireEvent, render } from "@testing-library/react-native";
+import RNExitApp from "react-native-exit-app";
 import React from "react";
 import ServerUnreachableDialogComponent from "./ServerUnreachableDialogComponent";
 
@@ -26,11 +26,11 @@ describe("<ServerUnreachableDialogComponent />", () => {
   });
 
   it("should close app when EXIT is pressed", async () => {
-    BackHandler.exitApp = jest.fn();
+    RNExitApp.exitApp = jest.fn();
 
     const dialogComponent = await render(<ServerUnreachableDialogComponent />);
     fireEvent.press(dialogComponent.getByTestId("dialogExitButton"));
 
-    expect(BackHandler.exitApp).toHaveBeenCalledTimes(1);
+    expect(RNExitApp.exitApp).toHaveBeenCalledTimes(1);
   });
 });

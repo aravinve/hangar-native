@@ -1,5 +1,6 @@
-import { BackHandler, Pressable, StyleSheet, Text, View } from "react-native";
+import { Pressable, StyleSheet, Text, View } from "react-native";
 import Modal from "react-native-modal";
+import RNExitApp from "react-native-exit-app";
 import React from "react";
 
 export default function ServerUnreachableDialogComponent() {
@@ -18,7 +19,7 @@ export default function ServerUnreachableDialogComponent() {
             testID="dialogExitButton"
             style={styles.dismissButton}
             onPress={() => {
-              BackHandler.exitApp();
+              RNExitApp.exitApp();
             }}
           >
             <Text style={styles.dismissText}>EXIT</Text>
