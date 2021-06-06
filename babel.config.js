@@ -9,6 +9,7 @@ module.exports = {
           assets: "./src/assets",
           screens: "./src/screens",
           config: "./src/config",
+          schema: "./src/schema",
           ApiClient: "./src/ApiClient.js",
         },
       },

@@ -18,3 +18,10 @@ npm run code:formatCheck
 # For fixing lint errors and code format
 npm run code:clean
 ```
+
+### Non-relative imports
+
+Project uses path aliases (not relative imports) for keeping the import statements clean. For setting up a new folder inside the `src` directory, the path resolution has to be set in the following files
+
+- jsConfig.json
+- babel.config.json

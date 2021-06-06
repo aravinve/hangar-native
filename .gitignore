@@ -60,3 +60,7 @@ buck-out/
 
 # Test
 /coverage
+
+# Data
+user_data_realm.management/
+*realm*

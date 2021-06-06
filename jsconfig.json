@@ -9,7 +9,8 @@
       "assets": ["assets/*"],
       "components/*": ["components/*"],
       "screens/*": ["screens/*"],
-      "config/*": ["config/*"]
+      "config/*": ["config/*"],
+      "schema/*": ["schema/*"]
     }
   },
   "exclude": ["node_modules", "**/node_modules/*", "dist"]

@@ -15,8 +15,14 @@ module.exports = {
   transformIgnorePatterns: [],
   collectCoverage: true,
   collectCoverageFrom: ["./src/**/*.{js,jsx}"],
-  coveragePathIgnorePatterns: ["./src/ApiClient.js", "./src/config/*"],
+  coveragePathIgnorePatterns: [
+    "./src/ApiClient.js",
+    "./src/config/*",
+    "./src/schema/*",
+    "index.js",
+  ],
   moduleNameMapper: pathsToModuleNameMapper(paths, {
     prefix: "<rootDir>/src/",
   }),
+  setupFiles: ["./node_modules/react-native-gesture-handler/jestSetup.js"],
 };

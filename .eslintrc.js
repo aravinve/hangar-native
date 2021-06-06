@@ -10,6 +10,7 @@ module.exports = {
   rules: {
     semi: ["error", "always"],
     quotes: ["error", "double"],
+    "@typescript-eslint/ban-ts-ignore": "off",
     "sort-imports-es6-autofix/sort-imports-es6": [
       "error",
       {
